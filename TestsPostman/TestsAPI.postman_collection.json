@@ -1,0 +1,215 @@
+{
+	"info": {
+		"_postman_id": "a602ba5e-24be-46b1-84d1-feb58e81ac2f",
+		"name": "TestsAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/Articles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Articles"
+					]
+				},
+				"description": "Get all the articles"
+			},
+			"response": []
+		},
+		{
+			"name": "GetAdmin",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/AdminArticles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"AdminArticles"
+					]
+				},
+				"description": "Get all the articles"
+			},
+			"response": []
+		},
+		{
+			"name": "GetArticleById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/Articles/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Articles",
+						"1"
+					]
+				},
+				"description": "Get all the articles"
+			},
+			"response": []
+		},
+		{
+			"name": "TestMinPrice",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/test/articles/400",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"test",
+						"articles",
+						"400"
+					]
+				},
+				"description": "Get all the articles"
+			},
+			"response": []
+		},
+		{
+			"name": "GetArticleOrderbyName",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/Articles/sort",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Articles",
+						"sort"
+					]
+				},
+				"description": "Get all the articles"
+			},
+			"response": []
+		},
+		{
+			"name": "TestLike",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/test/articles/like/Aspirateur",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"test",
+						"articles",
+						"like",
+						"Aspirateur"
+					]
+				},
+				"description": "Get all the articles"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/Articles/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Articles",
+						"2"
+					]
+				},
+				"description": "Get all the articles"
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\":2,\"nom\":\"Aspirateur Robot test\",\"prix\":700,\"prixAchat\":200}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/Articles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Articles"
+					]
+				},
+				"description": "Get all the articles"
+			},
+			"response": []
+		},
+		{
+			"name": "Insert",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\":14,\"nom\":\"Aspirateur Robot test\",\"prix\":1220,\"prixAchat\":200}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/Articles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Articles"
+					]
+				},
+				"description": "Get all the articles"
+			},
+			"response": []
+		}
+	]
+}
