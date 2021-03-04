@@ -127,7 +127,7 @@ public class ArticleController {
 	@PostMapping(value = "/Articles")
 	public ResponseEntity<Void> ajouterArticle(@RequestBody Article article) {
 		if (article.getPrix() == 0)
-			throw new PrixArticleIncorrectException("Article introuvable");
+			throw new PrixArticleIncorrectException("Prix d'article nul impossible");
 		 Article articleAdded = articleDAO.save(article);
 		 if (articleAdded == null)
 			 return ResponseEntity.noContent().build();
